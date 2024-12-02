@@ -14,7 +14,7 @@ body {
     letter-spacing: 0.5px; /* 文字の間隔 */
     color: #333; /* 文字色 */
     background: lightblue;
-    overflow: hidden;
+ overflow: auto; /* スクロールを有効化 */
 }
 
 
