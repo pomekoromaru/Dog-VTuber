@@ -18,6 +18,23 @@ body {
 }
 
 
+/* フレーム付きのスタイル */
+.frame {
+    border: 3px solid #0055cc; /* 濃い水色の枠線 */
+    background: rgba(255, 255, 255, 0.8); /* 半透明の白色 */
+    padding: 20px; /* 内側の余白 */
+    margin: 20px auto; /* 上下にスペースを作り、中央揃え */
+    border-radius: 10px; /* 角を丸くしておしゃれに */
+    max-width: 80%; /* 最大幅を設定 */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* 影を付けて立体感を演出 */
+    font-size: 18px; /* 文字サイズ */
+    line-height: 1.6; /* 行間 */
+}
+
+.frame:hover {
+    background: rgba(255, 255, 255, 0.9); /* 背景を少し明るくする */
+    border-color: #003366; /* 枠線を濃い青色に変える */
+}
 
 
 /* ヘッダーとボタン */
