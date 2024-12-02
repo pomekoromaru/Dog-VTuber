@@ -1,7 +1,7 @@
 /* 全体のスタイル */
 body {
     margin: 0;
-    font-family: Arial, sans-serif;
+    font-family: preconnect, Arial, sans-serif;
     background: lightblue;
     overflow: hidden;
 }
