@@ -7,11 +7,14 @@
 
 
 body {
+	margin: 0;
     font-family: 'fonts', cursive; /* おしゃれなフォント */
     font-size: 18px; /* フォントサイズ */
     line-height: 1.6; /* 行間を広げて読みやすく */
     letter-spacing: 0.5px; /* 文字の間隔 */
     color: #333; /* 文字色 */
+    background: lightblue;
+    overflow: hidden;
 }
 
 
