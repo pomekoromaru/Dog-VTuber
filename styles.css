@@ -5,18 +5,16 @@
     src: url('MochiyPopOne-Regular.ttf') format('ttf');
 }
 
-
 body {
-	margin: 0;
+    margin: 0;
     font-family: 'fonts', cursive; /* おしゃれなフォント */
     font-size: 18px; /* フォントサイズ */
     line-height: 1.6; /* 行間を広げて読みやすく */
     letter-spacing: 0.5px; /* 文字の間隔 */
     color: #333; /* 文字色 */
     background: lightblue;
- overflow: auto; /* スクロールを有効化 */
+    overflow: auto; /* スクロールを有効化 */
 }
-
 
 /* フレーム付きのスタイル */
 .frame {
@@ -35,7 +33,6 @@ body {
     background: rgba(255, 255, 255, 0.9); /* 背景を少し明るくする */
     border-color: #003366; /* 枠線を濃い青色に変える */
 }
-
 
 /* ヘッダーとボタン */
 header {
@@ -89,4 +86,31 @@ img {
     margin: 20px 0;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* スマホ用スタイル (画面幅768px以下の場合) */
+@media screen and (max-width: 768px) {
+    body {
+        font-size: 16px; /* フォントサイズを少し小さめに */
+    }
+
+    nav {
+        flex-direction: column; /* ボタンを縦並びに */
+        gap: 15px; /* ボタン間の隙間を調整 */
+    }
+
+    nav button {
+        width: 90%; /* ボタンを画面幅の90%に */
+        margin: 0 auto; /* ボタンを中央揃え */
+    }
+
+    img {
+        max-width: 100%; /* 画像を画面幅に収める */
+        margin: 10px 0; /* 上下の余白を調整 */
+    }
+
+    .frame {
+        padding: 15px; /* フレーム内の余白を調整 */
+        margin: 15px auto; /* フレーム間の余白を狭める */
+    }
 }
