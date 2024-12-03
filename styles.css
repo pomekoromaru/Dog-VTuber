@@ -7,14 +7,29 @@
 
 body {
     margin: 0;
-    font-family: 'fonts', cursive; /* おしゃれなフォント */
+    font-family: 'CustomFont', Arial, sans-serif; /* フォールバックをカスタムフォントの後に指定 */
     font-size: 18px; /* フォントサイズ */
-    line-height: 1.6; /* 行間を広げて読みやすく */
+    line-height: 1.6; /* 行間 */
     letter-spacing: 0.5px; /* 文字の間隔 */
     color: #333; /* 文字色 */
     background: lightblue;
     overflow: auto; /* スクロールを有効化 */
 }
+
+p {
+    font-family: 'CustomFont', Arial, sans-serif; /* 英数字もCustomFontに統一 */
+    font-size: 16px; /* 段落専用の文字サイズ */
+    line-height: 1.8; /* 行間を少し広げる */
+    color: #333; /* テキストカラー */
+}
+
+.frame p {
+    font-family: 'CustomFont', Arial, sans-serif;
+    font-size: 18px;
+    line-height: 1.6;
+    color: #444;
+}
+
 
 /* フレーム付きのスタイル */
 .frame {
