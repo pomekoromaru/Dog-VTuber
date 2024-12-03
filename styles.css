@@ -30,9 +30,10 @@ body {
 }
 
 .frame:hover {
-    background: rgba(255, 255, 255, 0.9); /* 背景を少し明るくする */
-    border-color: #003366; /* 枠線を濃い青色に変える */
+    background: rgba(255, 255, 255, 0.8); /* 通常状態と同じ背景色 */
+    border-color: #0055cc; /* 通常状態と同じ枠線色 */
 }
+
 
 /* ヘッダーとボタン */
 header {
