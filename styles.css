@@ -130,3 +130,39 @@ img {
         margin: 15px auto; /* フレーム間の余白を狭める */
     }
 }
+
+
+/* 各種リンクセクションのスタイル */
+.link-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; /* 各リンク間の隙間 */
+    justify-content: center; /* 中央揃え */
+    margin-top: 20px;
+}
+
+.link-item {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* アイコンとテキストの間隔 */
+    text-decoration: none;
+    color: #0055cc; /* リンクの色 */
+    font-size: 18px;
+    border: 2px solid #0055cc;
+    padding: 10px;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.8); /* 半透明の背景 */
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.link-item:hover {
+    background: rgba(0, 85, 204, 0.1); /* 背景を少し暗く */
+    transform: scale(1.05); /* 拡大してホバー感を演出 */
+}
+
+.icon {
+    width: 40px; /* アイコンの幅 */
+    height: 40px; /* アイコンの高さ */
+    border-radius: 50%; /* 丸くする */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* 影を追加 */
+}
