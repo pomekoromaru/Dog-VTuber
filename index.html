@@ -4,29 +4,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <title>ポメころまる-PomeKoromaru-</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="icon" href="images/favicon.png" type="image/png">
-    
-    <!-- 通常のApple Touch Icon -->
-    <link rel="apple-touch-icon" sizes="120x120" href="images/apple-touch-icon.png">
-    <link rel="apple-touch-icon" sizes="152x152" href="images/apple-touch-icon.png">
 
-    <!-- ホーム画面用 (背景グレー) -->
+    <!-- CSSファイル -->
+    <link rel="stylesheet" href="styles.css">
+    
+    <!-- ファビコン -->
+    <link rel="icon" href="images/favicon.png" type="image/png">
+
+    <!-- Apple Touch Icons -->
+    <link rel="apple-touch-icon" sizes="120x120" href="images/apple-touch-icon.png">
     <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon-gray.png">
 
-    <!-- Web App用の設定 -->
+    <!-- Web App設定 -->
     <link rel="manifest" href="manifest.json">
 </head>
 
 <body>
+    <!-- 背景アニメーション -->
     <div class="background">
         <div class="paw"></div>
         <div class="paw"></div>
         <div class="paw"></div>
     </div>
 
+    <!-- ヘッダー -->
     <header>
         <nav>
             <button onclick="navigate('intro')">自己紹介</button>
@@ -38,84 +40,54 @@
         </nav>
     </header>
 
+    <!-- メインコンテンツ -->
     <main>
         <section id="intro" class="content">
             <div class="frame">
                 <h1>自己紹介</h1>
-            <p class="intro-text">
-犬語翻訳機で喋るバーチャルポメラニアン!<br>
-ゲーム配信をしたり、ころまるの日常を四コマにしているよ!<br><br>
-
-配信→不定期<br>
-四コマ→平日(土日祝を除く)に更新<br><br>
-
-性別：男の子<br>
-誕生日：5月6日<br>
-好きな食べ物：チーズ<br><br>
-
-↓主に配信しているゲーム↓<br>
-・原神<br>
-・ELDEN RING<br>
-・Apex(最近やってない)<br>
-・フリーゲーム・ホラーゲーム
-</p>
-
+                <p class="intro-text">
+                    犬語翻訳機で喋るバーチャルポメラニアン!<br>
+                    ゲーム配信をしたり、ころまるの日常を四コマにしているよ!<br><br>
+                    配信→不定期<br>
+                    四コマ→平日(土日祝を除く)に更新<br><br>
+                    性別：男の子<br>
+                    誕生日：5月6日<br>
+                    好きな食べ物：チーズ<br><br>
+                    ↓主に配信しているゲーム↓<br>
+                    ・原神<br>
+                    ・ELDEN RING<br>
+                    ・Apex(最近やってない)<br>
+                    ・フリーゲーム・ホラーゲーム
+                </p>
             </div>
         </section>
 
-        <section id="guidelines" class="content hidden">
+        <section id="links" class="content hidden">
             <div class="frame">
-                <h1>ガイドライン</h1>
-                <p>ここにガイドラインの内容を入れてください。</p>
-                <img src="guidelines-image.jpg" alt="ガイドライン画像">
+                <h1>各種リンク</h1>
+                <p>以下のリンクからアクセスできます：</p>
+                <div class="link-list">
+                    <a href="https://twitter.com/pomekoromaru" target="_blank" class="link-item">
+                        <img src="images/logo-X.png" alt="Xアイコン" class="icon">
+                        <span>X</span>
+                        <small>四コマ＆配信告知など！</small>
+                    </a>
+                    <a href="https://www.youtube.com/@pomekoromaru" target="_blank" class="link-item">
+                        <img src="images/logo-Youtube.png" alt="YouTubeアイコン" class="icon">
+                        <span>YouTube</span>
+                        <small>配信などのメイン活動！</small>
+                    </a>
+                    <a href="https://www.instagram.com/pomekoromaruvt/?hl=ja" target="_blank" class="link-item">
+                        <img src="images/logo-insta.png" alt="Instagramアイコン" class="icon">
+                        <span>Instagram</span>
+                        <small>四コマがみやすい！</small>
+                    </a>
+                </div>
             </div>
         </section>
-
-        <section id="sidemap" class="content hidden">
-            <div class="frame">
-                <h1>三面図</h1>
-                <p>ころまる三面図</p>
-
-                <img src="images/three-sided view.png" alt="三面図">
-                <img src="images/three-sided view2.png" alt="三面図2">
-            </div>
-        </section>
-
-        <section id="collab" class="content hidden">
-            <div class="frame">
-                <h1>コラボ</h1>
-                <p>ここにコラボ情報を記載してください。</p>
-                <img src="collab-image.jpg" alt="コラボ画像">
-            </div>
-        </section>
-
-<section id="links" class="content hidden">
-    <div class="frame">
-        <h1>各種リンク</h1>
-        <p>以下のリンクからアクセスできます：</p>
-        <div class="link-list">
-            <a href="https://twitter.com/pomekoromaru" target="_blank" class="link-item">
-                <img src="images/logo-X.png" alt="Xアイコン" class="icon">
-  <div class="text">X</div>
-                <small>四コマ＆配信告知など！</small>
-            </a>
-            <a href="https://www.youtube.com/@pomekoromaru" target="_blank" class="link-item">
-                <img src="images/logo-Youtube.png" alt="YouTubeアイコン" class="icon">
-      <div class="text">YouTube</div>
-                <small>配信などのメイン活動！</small>
-            </a>
-            <a href="https://www.instagram.com/pomekoromaruvt/?hl=ja" target="_blank" class="link-item">
-                <img src="images/logo-insta.png" alt="インスタアイコン" class="icon">
-                 <div class="text">Instagram</div>
-                <small>四コマがみやすい！</small>
-            </a>
-        </div>
-    </div>
-</section>
-
-
     </main>
 
+    <!-- ナビゲーション用スクリプト -->
     <script>
         function navigate(sectionId) {
             const sections = document.querySelectorAll('.content');
@@ -124,4 +96,5 @@
         }
     </script>
 </body>
+
 </html>
