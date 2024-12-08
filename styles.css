@@ -1,7 +1,7 @@
 /* 全体のスタイル */
 
-@font-face {
-    font-family: 'keifont.ttf';
+@font-face { 
+    font-family: 'MochiyPopOne';
     src: url('MochiyPopOne-Regular.ttf') format('truetype'); /* フォントファイル形式を正確に指定 */
 }
 
@@ -16,21 +16,12 @@ body {
     overflow: auto; /* スクロールを有効化 */
 }
 
-
 p {
-    font-family: 'CustomFont', keifont.ttf; /* 英数字もCustomFontに統一 */
     font-size: 16px; /* 段落専用の文字サイズ */
     line-height: 1.8; /* 行間を少し広げる */
     color: #333; /* テキストカラー */
+    text-align: left; /* 左揃え */
 }
-
-.frame p {
-    font-family: 'CustomFont', keifont.ttf;
-    font-size: 18px;
-    line-height: 1.6;
-    color: #444;
-}
-
 
 /* フレーム付きのスタイル */
 .frame {
@@ -46,10 +37,9 @@ p {
 }
 
 .frame:hover {
-    background: rgba(255, 255, 255, 0.8); /* 通常状態と同じ背景色 */
-    border-color: #0055cc; /* 通常状態と同じ枠線色 */
+    background: rgba(255, 255, 255, 0.9); /* 背景を少し明るく */
+    border-color: #003366; /* 枠線を濃い色に */
 }
-
 
 /* ヘッダーとボタン */
 header {
@@ -81,7 +71,6 @@ nav button:hover {
 /* コンテンツエリア */
 main {
     padding: 20px;
-    text-align: center;
 }
 
 .content {
@@ -90,10 +79,6 @@ main {
 
 .content:not(.hidden) {
     display: block;
-}
-
-.hidden {
-    display: none;
 }
 
 /* 画像 */
@@ -132,7 +117,6 @@ img {
     }
 }
 
-
 /* 各種リンクセクションのスタイル */
 .link-list {
     display: flex;
@@ -155,7 +139,7 @@ img {
     margin-bottom: 5px; /* アイコンとテキストの間隔 */
 }
 
-.link-item .text {
+.link-item span {
     font-size: 16px;
     font-weight: bold;
 }
@@ -164,4 +148,20 @@ img {
     font-size: 12px;
     color: #666; /* 補足テキストの色 */
     margin-top: 2px;
+}
+
+/* メールボタン */
+.email-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #0055cc;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+.email-button:hover {
+    background-color: #003366;
 }
