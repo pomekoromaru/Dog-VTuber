@@ -7,17 +7,17 @@
 
     <title>ポメころまる-PomeKoromaru-</title>
     <link rel="stylesheet" href="styles.css">
-    <link rel="icon" href="favicon.png" type="image/png">
+    <link rel="icon" href="main/images/main/images/favicon.png" type="image/png">
     
     <!-- 通常のApple Touch Icon -->
-    <link rel="apple-touch-icon" sizes="120x120" href="apple-touch-icon.png">
-    <link rel="apple-touch-icon" sizes="152x152" href="apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="main/images/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="main/images/apple-touch-icon.png">
 
     <!-- ホーム画面用 (背景グレー) -->
-    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon-gray.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="main/images/apple-touch-icon-gray.png">
 
     <!-- Web App用の設定 -->
-    <link rel="manifest" href="manifest.json">
+    <link rel="manifest" href="main/images/manifest.json">
 </head>
 
 <body>
@@ -74,8 +74,9 @@
             <div class="frame">
                 <h1>三面図</h1>
                 <p>ころまる三面図</p>
-                <img src="three-sided view.png" alt="三面図">
-                <img src="three-sided view2.png" alt="三面図2">
+
+                <img src="main/images/three-sided view.png" alt="三面図">
+                <img src="main/images/three-sided view2.png" alt="三面図2">
             </div>
         </section>
 
@@ -87,21 +88,28 @@
             </div>
         </section>
 
-        <section id="links" class="content hidden">
-            <div class="frame">
-                <h1>各種リンク</h1>
-                <p>ここにリンク集を表示してください。</p>
-                <img src="links-image.jpg" alt="各種リンク画像">
-            </div>
-        </section>
+<section id="links" class="content hidden">
+    <div class="frame">
+        <h1>各種リンク</h1>
+        <p>以下のリンクからアクセスできます：</p>
+        <div class="link-list">
+            <a href="https://twitter.com/pomekoromaru" target="_blank" class="link-item">
+                <img src="main/images/logo-X.png" alt="Xアイコン" class="icon">
+                Twitter
+            </a>
+            <a href="https://www.youtube.com/@pomekoromaru" target="_blank" class="link-item">
+                <img src="main/images/logo-Youtube.png" alt="YouTubeアイコン" class="icon">
+                YouTube
+            </a>
+            <a href="https://github.com" target="_blank" class="link-item">
+                <img src="main/images/github-icon.png" alt="GitHubアイコン" class="icon">
+                GitHub
+            </a>
+        </div>
+    </div>
+</section>
 
-        <section id="contact" class="content hidden">
-            <div class="frame">
-                <h1>連絡先</h1>
-                <p>ここに連絡先情報を記載してください。</p>
-                <img src="contact-image.jpg" alt="連絡先画像">
-            </div>
-        </section>
+
     </main>
 
     <script>
