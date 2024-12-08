@@ -20,8 +20,15 @@ p {
     font-size: 16px; /* 段落専用の文字サイズ */
     line-height: 1.8; /* 行間を少し広げる */
     color: #333; /* テキストカラー */
-    text-align: left; /* 左揃え */
 }
+
+/* 自己紹介の特定の段落を左揃えに */
+.intro-text {
+    text-align: left;
+    line-height: 1.8; /* 読みやすさ向上 */
+    margin: 10px 0; /* 上下の余白調整 */
+}
+
 
 /* フレーム付きのスタイル */
 .frame {
@@ -150,18 +157,35 @@ img {
     margin-top: 2px;
 }
 
-/* メールボタン */
-.email-button {
-    display: inline-block;
-    padding: 10px 20px;
+/* メールリンクをボタン風にする */
+.email-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
     background-color: #0055cc;
     color: white;
-    text-decoration: none;
-    border-radius: 5px;
+    padding: 10px 20px;
+    border-radius: 10px;
     font-size: 16px;
-    margin-top: 10px;
+    max-width: 200px; /* ボタンの幅を調整 */
+    margin: 0 auto; /* 中央揃え */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s;
 }
 
-.email-button:hover {
+.email-item:hover {
     background-color: #003366;
 }
+
+.email-item img {
+    width: 50px; /* アイコンサイズを統一 */
+    height: 50px;
+    margin-bottom: 10px; /* アイコンとテキストの間隔 */
+}
+
+.email-item span {
+    font-size: 16px;
+    font-weight: bold;
+}
+
