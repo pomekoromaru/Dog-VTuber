@@ -16,17 +16,100 @@ body {
     overflow: auto; /* スクロールを有効化 */
 }
 
+
+/* デスクトップ用ナビゲーションはデフォルト表示 */
+.desktop-nav {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+/* スマホ用ナビゲーションは初期状態で非表示 */
+.mobile-nav {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+}
+
+.mobile-nav button {
+    background-color: #0055cc;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.mobile-nav .dropdown {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: none;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 200px;
+    text-align: center;
+}
+
+.mobile-nav .dropdown li {
+    padding: 10px 0;
+    border-bottom: 1px solid #eee;
+    cursor: pointer;
+}
+
+.mobile-nav .dropdown li:last-child {
+    border-bottom: none;
+}
+
+.mobile-nav .dropdown li:hover {
+    background-color: #e0e0e0;
+}
+
+/* メディアクエリでスマホ版のスタイルを適用 */
+@media screen and (max-width: 768px) {
+    .desktop-nav {
+        display: none;
+    }
+
+    .mobile-nav {
+        display: flex;
+    }
+}
+
+/* ドロップダウンを表示 */
+.dropdown.show {
+    display: block;
+}
+
+
+
 p {
     font-size: 16px; /* 段落専用の文字サイズ */
     line-height: 1.8; /* 行間を少し広げる */
     color: #333; /* テキストカラー */
 }
 
-/* 自己紹介の特定の段落を左揃えに */
+/* テキストを左寄せにする */
 .intro-text {
-    text-align: left;
-    line-height: 1.8; /* 読みやすさ向上 */
-    margin: 10px 0; /* 上下の余白調整 */
+    text-align: left; /* 左寄せ */
+    max-width: 600px; /* テキストの最大幅を指定 */
+    margin: 0 auto; /* 中央寄せに配置 */
+    line-height: 1.8; /* 行間の調整 */
+}
+
+
+/* フレーム全体を中央に配置 */
+.frame.centered {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; /* テキストとタイトルを縦並びに */
+    text-align: center; /* ヘッダー部分は中央寄せ */
+    margin: 20px auto; /* 自動で中央配置 */
+    padding: 20px;
+    max-width: 80%; /* 最大幅 */
 }
 
 
