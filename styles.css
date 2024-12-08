@@ -157,35 +157,29 @@ img {
     margin-top: 2px;
 }
 
-/* メールリンクをボタン風にする */
-.email-item {
+/* お問い合わせボタンのスタイル */
+.email-button {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-decoration: none;
+    align-items: center; /* アイコンとテキストを縦方向で中央揃え */
+    justify-content: center; /* コンテンツを横方向で中央揃え */
+    padding: 10px 20px;
     background-color: #0055cc;
     color: white;
-    padding: 10px 20px;
-    border-radius: 10px;
+    text-decoration: none;
+    border-radius: 5px;
     font-size: 16px;
-    max-width: 200px; /* ボタンの幅を調整 */
-    margin: 0 auto; /* 中央揃え */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    transition: background-color 0.3s;
+    font-weight: bold;
+    gap: 10px; /* アイコンとテキストの間隔 */
+    width: fit-content; /* コンテンツに合わせた幅 */
+    margin: 0 auto; /* ボタンを中央揃え */
 }
 
-.email-item:hover {
+.email-button:hover {
     background-color: #003366;
 }
 
-.email-item img {
-    width: 50px; /* アイコンサイズを統一 */
-    height: 50px;
-    margin-bottom: 10px; /* アイコンとテキストの間隔 */
+/* メールアイコンのスタイル */
+.email-icon {
+    width: 24px; /* アイコンの幅 */
+    height: 24px; /* アイコンの高さ */
 }
-
-.email-item span {
-    font-size: 16px;
-    font-weight: bold;
-}
-
