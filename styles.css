@@ -1,7 +1,7 @@
 /* 全体のスタイル */
 
 @font-face {
-    font-family: 'MochiyPopOne';
+    font-family: 'keifont.ttf';
     src: url('MochiyPopOne-Regular.ttf') format('truetype'); /* フォントファイル形式を正確に指定 */
 }
 
@@ -18,14 +18,14 @@ body {
 
 
 p {
-    font-family: 'CustomFont', Arial, sans-serif; /* 英数字もCustomFontに統一 */
+    font-family: 'CustomFont', keifont.ttf; /* 英数字もCustomFontに統一 */
     font-size: 16px; /* 段落専用の文字サイズ */
     line-height: 1.8; /* 行間を少し広げる */
     color: #333; /* テキストカラー */
 }
 
 .frame p {
-    font-family: 'CustomFont', Arial, sans-serif;
+    font-family: 'CustomFont', keifont.ttf;
     font-size: 18px;
     line-height: 1.6;
     color: #444;
