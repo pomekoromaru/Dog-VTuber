@@ -1,41 +1,144 @@
-/* フォント設定 */
+/* 全体のスタイル */
+
 @font-face {
-    font-family: 'MochiyPopOne';
-    src: url('MochiyPopOne-Regular.ttf') format('truetype');
+    font-family: 'keifont.ttf';
+    src: url('MochiyPopOne-Regular.ttf') format('truetype'); /* フォントファイル形式を正確に指定 */
 }
 
 body {
     margin: 0;
-    font-family: 'MochiyPopOne', Arial, sans-serif;
-    font-size: 18px;
-    line-height: 1.6;
-    color: #333;
+    font-family: 'MochiyPopOne', Arial, sans-serif; /* カスタムフォントを優先的に使用 */
+    font-size: 18px; /* フォントサイズ */
+    line-height: 1.6; /* 行間 */
+    letter-spacing: 0.5px; /* 文字の間隔 */
+    color: #333; /* テキストカラー */
     background: lightblue;
-    overflow: auto;
+    overflow: auto; /* スクロールを有効化 */
 }
 
-.intro-text {
-    text-align: left; /* 左揃えにする */
-    margin: 0;
+
+p {
+    font-family: 'CustomFont', keifont.ttf; /* 英数字もCustomFontに統一 */
+    font-size: 16px; /* 段落専用の文字サイズ */
+    line-height: 1.8; /* 行間を少し広げる */
+    color: #333; /* テキストカラー */
 }
+
+.frame p {
+    font-family: 'CustomFont', keifont.ttf;
+    font-size: 18px;
+    line-height: 1.6;
+    color: #444;
+}
+
 
 /* フレーム付きのスタイル */
 .frame {
-    border: 3px solid #0055cc;
-    background: rgba(255, 255, 255, 0.8);
+    border: 3px solid #0055cc; /* 濃い水色の枠線 */
+    background: rgba(255, 255, 255, 0.8); /* 半透明の白色 */
+    padding: 20px; /* 内側の余白 */
+    margin: 20px auto; /* 上下にスペースを作り、中央揃え */
+    border-radius: 10px; /* 角を丸くしておしゃれに */
+    max-width: 80%; /* 最大幅を設定 */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* 影を付けて立体感を演出 */
+    font-size: 18px; /* 文字サイズ */
+    line-height: 1.6; /* 行間 */
+}
+
+.frame:hover {
+    background: rgba(255, 255, 255, 0.8); /* 通常状態と同じ背景色 */
+    border-color: #0055cc; /* 通常状態と同じ枠線色 */
+}
+
+
+/* ヘッダーとボタン */
+header {
+    background: #003366;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    gap: 10px; /* ボタン間の隙間を均等に */
+}
+
+nav button {
+    background: #0055cc;
+    color: white;
+    border: none;
+    padding: 10px 20px; /* ボタン内の余白を調整 */
+    margin: 0;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    width: 150px; /* 全ボタンの幅を統一 */
+    text-align: center;
+    white-space: nowrap; /* テキストの折り返しを防ぐ */
+}
+
+nav button:hover {
+    background: #003366;
+}
+
+/* コンテンツエリア */
+main {
     padding: 20px;
-    margin: 20px auto;
-    border-radius: 10px;
+    text-align: center;
+}
+
+.content {
+    display: none;
+}
+
+.content:not(.hidden) {
+    display: block;
+}
+
+.hidden {
+    display: none;
+}
+
+/* 画像 */
+img {
     max-width: 80%;
+    height: auto;
+    margin: 20px 0;
+    border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
+
+/* スマホ用スタイル (画面幅768px以下の場合) */
+@media screen and (max-width: 768px) {
+    body {
+        font-size: 16px; /* フォントサイズを少し小さめに */
+    }
+
+    nav {
+        flex-direction: column; /* ボタンを縦並びに */
+        gap: 15px; /* ボタン間の隙間を調整 */
+    }
+
+    nav button {
+        width: 90%; /* ボタンを画面幅の90%に */
+        margin: 0 auto; /* ボタンを中央揃え */
+    }
+
+    img {
+        max-width: 100%; /* 画像を画面幅に収める */
+        margin: 10px 0; /* 上下の余白を調整 */
+    }
+
+    .frame {
+        padding: 15px; /* フレーム内の余白を調整 */
+        margin: 15px auto; /* フレーム間の余白を狭める */
+    }
+}
+
 
 /* 各種リンクセクションのスタイル */
 .link-list {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 15px;
+    gap: 15px; /* 各リンク間の間隔 */
 }
 
 .link-item {
@@ -43,69 +146,22 @@ body {
     flex-direction: column;
     align-items: center;
     text-decoration: none;
-    color: #333;
+    color: #333; /* 文字色 */
 }
 
 .link-item img {
-    width: 50px;
+    width: 50px; /* アイコンサイズ */
     height: 50px;
-    margin-bottom: 5px;
+    margin-bottom: 5px; /* アイコンとテキストの間隔 */
 }
 
-.link-item span {
+.link-item .text {
     font-size: 16px;
     font-weight: bold;
 }
 
 .link-item small {
     font-size: 12px;
-    color: #666;
+    color: #666; /* 補足テキストの色 */
     margin-top: 2px;
-}
-
-
-.background {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-    z-index: -1; /* 背景に配置する */
-}
-
-.paw {
-    position: absolute;
-    width: 100px;
-    height: 100px;
-    background: rgba(255, 255, 255, 0.5);
-    border-radius: 50%;
-    animation: slide 8s linear infinite;
-}
-
-.paw:nth-child(1) {
-    top: 30%;
-    left: -10%;
-    animation-delay: 0s;
-}
-
-.paw:nth-child(2) {
-    top: 50%;
-    left: -15%;
-    animation-delay: 2s;
-}
-
-.paw:nth-child(3) {
-    top: 70%;
-    left: -20%;
-    animation-delay: 4s;
-}
-
-@keyframes slide {
-    from {
-        transform: translateX(0);
-    }
-    to {
-        transform: translateX(120%);
-    }
 }
