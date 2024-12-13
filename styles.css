@@ -297,3 +297,33 @@ img {
     width: 24px; /* アイコンの幅 */
     height: 24px; /* アイコンの高さ */
 }
+
+
+.mobile-nav button {
+    background: linear-gradient(90deg, #0055cc, #3399ff); /* グラデーション背景 */
+    color: white;
+    border: none;
+    border-radius: 25px;
+    padding: 10px 20px;
+    font-size: 18px;
+    font-weight: bold;
+    font-family: 'MochiyPopOne', sans-serif; /* カスタムフォント */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center; /* アイコンと文字を中央揃え */
+    gap: 10px; /* アイコンと文字の間隔 */
+}
+
+.mobile-nav button:hover {
+    background-position: right; /* ホバー時のアニメーション */
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3);
+}
+
+.button-icon {
+    width: 20px;
+    height: 20px;
+    vertical-align: middle;
+}
+
