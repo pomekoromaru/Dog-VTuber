@@ -41,17 +41,17 @@
     </nav>
 
     <!-- スマホ用ドロップダウンメニュー -->
-    <nav class="mobile-nav hidden">
+      <div class="mobile-nav">
         <button onclick="toggleDropdown()">セクション選択</button>
-        <ul class="dropdown hidden">
-            <li onclick="navigate('intro')">自己紹介</li>
-            <li onclick="navigate('guidelines')">ガイドライン</li>
-            <li onclick="navigate('sidemap')">三面図</li>
-            <li onclick="navigate('collab')">コラボ</li>
-            <li onclick="navigate('links')">各種リンク</li>
-            <li onclick="navigate('contact')">連絡先</li>
-        </ul>
-    </nav>
+        <div class="dropdown">
+            <button onclick="navigate('intro')">自己紹介</button>
+            <button onclick="navigate('guidelines')">ガイドライン</button>
+            <button onclick="navigate('sidemap')">三面図</button>
+            <button onclick="navigate('collab')">コラボ</button>
+            <button onclick="navigate('links')">各種リンク</button>
+            <button onclick="navigate('contact')">連絡先</button>
+        </div>
+    </div>
 </header>
 
 
