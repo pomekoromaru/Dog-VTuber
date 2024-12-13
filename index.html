@@ -29,159 +29,38 @@
     </div>
 
     <!-- ヘッダー -->
- <header>
-    <!-- デスクトップ用ナビゲーション -->
-    <nav class="desktop-nav">
-        <button onclick="navigate('intro')">自己紹介</button>
-        <button onclick="navigate('guidelines')">ガイドライン</button>
-        <button onclick="navigate('sidemap')">三面図</button>
-        <button onclick="navigate('collab')">コラボ</button>
-        <button onclick="navigate('links')">各種リンク</button>
-        <button onclick="navigate('contact')">連絡先</button>
-    </nav>
-
-    <!-- スマホ用ドロップダウンメニュー -->
-      <div class="mobile-nav">
-        <button onclick="toggleDropdown()">セクション選択</button>
-        <div class="dropdown">
+    <header>
+        <!-- デスクトップ用ナビゲーション -->
+        <nav class="desktop-nav">
             <button onclick="navigate('intro')">自己紹介</button>
             <button onclick="navigate('guidelines')">ガイドライン</button>
             <button onclick="navigate('sidemap')">三面図</button>
             <button onclick="navigate('collab')">コラボ</button>
             <button onclick="navigate('links')">各種リンク</button>
             <button onclick="navigate('contact')">連絡先</button>
-        </div>
-    </div>
-</header>
+        </nav>
 
+        <!-- スマホ用ドロップダウンメニュー -->
+        <div class="mobile-nav">
+            <button onclick="toggleDropdown()">セクション選択</button>
+            <div class="dropdown">
+                <button onclick="navigate('intro')">自己紹介</button>
+                <button onclick="navigate('guidelines')">ガイドライン</button>
+                <button onclick="navigate('sidemap')">三面図</button>
+                <button onclick="navigate('collab')">コラボ</button>
+                <button onclick="navigate('links')">各種リンク</button>
+                <button onclick="navigate('contact')">連絡先</button>
+            </div>
+        </div>
+    </header>
 
     <!-- メインコンテンツ -->
     <main>
-        <!-- 自己紹介 -->
-        <section id="intro" class="content">
-            <div class="frame centered">
-                <h1>自己紹介</h1>
-                <div class="intro-text">
-                    犬語翻訳機で喋るバーチャルポメラニアン!<br>
-                    ゲーム配信をしたり、ころまるの日常を四コマにしているよ!<br><br>
-                    配信→不定期<br>
-                    四コマ→平日(土日祝を除く)に更新<br><br>
-                    性別：男の子<br>
-                    誕生日：5月6日<br>
-                    好きな食べ物：チーズ<br><br>
-                    ↓主に配信しているゲーム↓<br>
-                    ・原神<br>
-                    ・ELDEN RING<br>
-                    ・Apex(最近やってない)<br>
-                    ・フリーゲーム・ホラーゲーム
-                </div>
-            </div>
-        </section>
-
-        <!-- ガイドライン -->
-        <section id="guidelines" class="content hidden">
-            <div class="frame">
-                <h1>ガイドライン</h1>
-                <p>ここにガイドラインの内容を入れてください。</p>
-                <img src="images/guidelines-image.jpg" alt="ガイドラインに関する画像">
-            </div>
-        </section>
-
-        <!-- 三面図 -->
-        <section id="sidemap" class="content hidden">
-            <div class="frame">
-                <h1>三面図</h1>
-                <p>ころまる三面図</p>
-                <img src="images/three-sided-view.png" alt="ころまるの三面図1">
-                <img src="images/three-sided-view2.png" alt="ころまるの三面図2">
-            </div>
-        </section>
-
-        <!-- コラボ -->
-        <section id="collab" class="content hidden">
-            <div class="frame">
-                <h1>コラボ</h1>
-                <p>ここにコラボ情報を記載してください。</p>
-                <img src="images/collab-image.jpg" alt="コラボ画像">
-            </div>
-        </section>
-
-        <!-- 各種リンク -->
-        <section id="links" class="content hidden">
-            <div class="frame">
-                <h1>各種リンク</h1>
-                <div class="link-list">
-                    <a href="https://twitter.com/pomekoromaru" target="_blank" class="link-item">
-                        <img src="images/logo-X.png" alt="Xのアイコン" class="icon">
-                        <span>X</span>
-                        <small>四コマ＆配信告知など！</small>
-                    </a>
-                    <a href="https://www.youtube.com/@pomekoromaru" target="_blank" class="link-item">
-                        <img src="images/logo-Youtube.png" alt="YouTubeのアイコン" class="icon">
-                        <span>YouTube</span>
-                        <small>配信などのメイン活動！</small>
-                    </a>
-
-    <a href="https://www.instagram.com/pomekoromaruvt/?hl=ja" target="_blank" class="link-item">
-                        <img src="images/logo-insta.png" alt="Instagramのアイコン" class="icon">
-                        <span>Instagram</span>
-                        <small>四コマが一気読みしやすい！</small>
-                    </a>
-
-  <a href="https://www.tiktok.com/@pomekoromaru?is_from_webapp=1&sender_device=pc" target="_blank" class="link-item">
-                        <img src="images/logo-tiktok.png" alt="TikTokのアイコン" class="icon">
-                        <span>TikTok</span>
-                        <small>四コマ&配信の切り抜き！</small>
-                    </a>
-  <a href="https://bsky.app/profile/pomekoromaru.bsky.social" target="_blank" class="link-item">
-                        <img src="images/logo-Bluesky.png" alt="Blueskyのアイコン" class="icon">
-                        <span>Bluesky</span>
-                        <small>活動未定！</small>
-                    </a>
-  <a href="https://pomekoromaru.booth.pm/" target="_blank" class="link-item">
-                        <img src="images/logo-BOOTH.png" alt="BOOTHのアイコン" class="icon">
-                        <span>BOOTH</span>
-                        <small>グッズ販売中！</small>
-                    </a>
-  <a href="https://marshmallow-qa.com/nleh4kci8dgk7z0?t=NhHrs3&utm_medium=url_text&utm_source=promotion" target="_blank" class="link-item">
-                        <img src="images/logo-masyu.png" alt=マシュマロのアイコン" class="icon">
-                        <span>マシュマロ</span>
-                        <small>配信で読むかも！</small>
-                    </a>
-
-
-
-
-
-
-                </div>
-            </div>
-        </section>
-
-        <!-- 連絡先 -->
-
- <section id="contact" class="content hidden">
-    <div class="frame">
-        <h1>連絡先</h1>
-        <p>お仕事の依頼・お問い合わせはこちらから</p>
-        <a href="mailto:pomekoromaru@gmail.com" class="email-button">
-            <img src="images/logo-mail.png" alt="メールアイコン" class="email-icon">
-            メールを送る
-        </a>
-    </div>
-</section>
-
-
+        <!-- 各セクション（省略） -->
     </main>
 
-    <!-- ナビゲーション用スクリプト -->
-    <script>
-        function navigate(sectionId) {
-            const sections = document.querySelectorAll('.content');
-            sections.forEach(section => section.classList.add('hidden'));
-            document.getElementById(sectionId).classList.remove('hidden');
-        }
-    </script>
+    <!-- JavaScriptファイル -->
+    <script src="src/MyJavaFile.js"></script>
 </body>
 
 </html>
