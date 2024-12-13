@@ -171,25 +171,17 @@
     </div>
 </section>
 
-<div class="mobile-nav">
-    <button onclick="toggleDropdown()">
-        <img src="images/menu-icon.png" alt="メニューアイコン" class="button-icon">
-        セクション選択
-    </button>
-    <div class="dropdown">
-        <!-- ドロップダウンメニュー -->
-    </div>
-</div>
-
-
 
     </main>
 
-<!-- ナビゲーション用スクリプト -->
-
-<script src="src/MyJavaFile/script.js"></script>
-
-
+    <!-- ナビゲーション用スクリプト -->
+    <script>
+        function navigate(sectionId) {
+            const sections = document.querySelectorAll('.content');
+            sections.forEach(section => section.classList.add('hidden'));
+            document.getElementById(sectionId).classList.remove('hidden');
+        }
+    </script>
 </body>
 
 </html>
