@@ -1,18 +1,11 @@
 // 初期化時に最初のセクションを表示する
 document.addEventListener('DOMContentLoaded', () => {
-    // 現在表示されている（hidden クラスが付いていない）セクションを取得
     const defaultSection = document.querySelector('.content:not(.hidden)');
-    // セクション選択ボタンを取得
     const sectionButton = document.querySelector('.mobile-nav button');
     if (defaultSection && sectionButton) {
-        // 現在のセクションのタイトルをセクション選択ボタンにセット
         sectionButton.textContent = defaultSection.querySelector('h1').textContent;
-    } else if (sectionButton) {
-        // 万が一表示中のセクションがない場合、デフォルトのテキストを表示
-        sectionButton.textContent = 'セクションを選択';
     }
 });
- 
 
 // ドロップダウンを開閉する
 function toggleDropdown() {
